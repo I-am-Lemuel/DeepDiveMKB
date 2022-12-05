@@ -1,9 +1,4 @@
-# DeepDiveMKB
-
-
-
-
-
+# DeepDiveMKB - IT-Prize
 
 
 
@@ -11,4 +6,4 @@
 
 <hr/>
 
-### **Voor resultaten stuur naar: deepdive@bit-academy.nl**
+#### **Voor resultaten stuur naar: deepdive@bit-academy.nl**
