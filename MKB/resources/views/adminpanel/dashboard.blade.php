@@ -9,6 +9,12 @@
     @livewireStyles
 </head>
 <body>
+    <nav class="h-16 bg-[#343434]">
+        <div class="container mx-auto h-full flex items-center">
+            <p class="text-white font-bold text-2xl">Event CRUD</p>
+        </div>
+    </nav>
+    
     <div>
         @livewire('post')
     </div>
