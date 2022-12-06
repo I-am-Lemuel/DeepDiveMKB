@@ -75,10 +75,8 @@ Onze [User Stories en Planning](https://www.notion.so/30b1b2f93e4f490f81d6f29012
 
 ## Technische specificaties
 
-Technologieën die waarschijnlijk zullen worden gebruikt om het prototype te leveren zijn PHP, HTML, JavaScript,
-CSS. Voor het installeren van bibliotheken van derden wordt Composer en/of NPM gebruikt. Derde partij
-tools voor het bouwen van effectieve grafische gebruikersinterfaces zijn waarschijnlijk TailwindCSS en
-Bootstrap
+Technologieën die waarschijnlijk zullen worden gebruikt om het prototype te leveren zijn Laravel, blade, html. voor het installeren van bibliotheken van derden wordt Composer en/of NPM gebruikt. Derde partij
+tools voor het bouwen van effectieve grafische gebruikersinterfaces; TailwindCSS.
 
 ## Authors
 
