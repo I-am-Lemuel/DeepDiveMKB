@@ -7,7 +7,7 @@ use App\Models\Post as Posts;
 
 class Post extends Component
 {
-    public $posts, $title, $img_url, $price, $description, $post_id;
+    public $posts, $title, $file_path, $price, $description, $post_id;
     public $updatePost = false;
 
     protected $listeners = [
@@ -27,19 +27,21 @@ class Post extends Component
         return view('livewire.post');
     }
 
-    public function resetFields() {
+    public function resetFields()
+    {
         $this->title = '';
-        $this->img_url = '';
+        $this->file_path = '';
         $this->price = '';
         $this->description = '';
     }
 
-    public function store() {
+    public function store()
+    {
         $this->validate();
 
         Posts::create([
             'title' => $this->title,
-            'img_url' => $this->img_url,
+            'file_path' => $this->file_path,
             'price' => $this->price,
             'description' => $this->description,
         ]);
@@ -51,30 +53,33 @@ class Post extends Component
         $this->emit('postAdded');
     }
 
-    public function edit($id) {
+    public function edit($id)
+    {
         $post = Posts::find($id);
         $this->post_id = $id;
         $this->title = $post->title;
-        $this->img_url = $post->img_url;
+        $this->file_path = $post->file_path;
         $this->price = $post->price;
         $this->description = $post->description;
 
         $this->updatePost = true;
     }
 
-    public function cancel() {
+    public function cancel()
+    {
         $this->updatePost = false;
         $this->resetFields();
     }
 
-    public function update() {
+    public function update()
+    {
         $this->validate();
 
         try {
             $post = Posts::find($this->post_id);
             $post->update([
                 'title' => $this->title,
-                'img_url' => $this->img_url,
+                'file_path' => $this->file_path,
                 'price' => $this->price,
                 'description' => $this->description,
             ]);
@@ -88,7 +93,8 @@ class Post extends Component
         }
     }
 
-    public function deletePost($id) {
+    public function deletePost($id)
+    {
         try {
             Posts::find($id)->delete();
             session()->flash('message', 'Post deleted successfully.');
