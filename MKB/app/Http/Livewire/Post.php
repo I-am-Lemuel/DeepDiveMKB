@@ -27,14 +27,16 @@ class Post extends Component
         return view('livewire.post');
     }
 
-    public function resetFields() {
+    public function resetFields()
+    {
         $this->title = '';
         $this->img_url = '';
         $this->price = '';
         $this->description = '';
     }
 
-    public function store() {
+    public function store()
+    {
         $this->validate();
 
         Posts::create([
@@ -51,7 +53,8 @@ class Post extends Component
         $this->emit('postAdded');
     }
 
-    public function edit($id) {
+    public function edit($id)
+    {
         $post = Posts::find($id);
         $this->post_id = $id;
         $this->title = $post->title;
@@ -62,12 +65,14 @@ class Post extends Component
         $this->updatePost = true;
     }
 
-    public function cancel() {
+    public function cancel()
+    {
         $this->updatePost = false;
         $this->resetFields();
     }
 
-    public function update() {
+    public function update()
+    {
         $this->validate();
 
         try {
@@ -88,7 +93,8 @@ class Post extends Component
         }
     }
 
-    public function deletePost($id) {
+    public function deletePost($id)
+    {
         try {
             Posts::find($id)->delete();
             session()->flash('message', 'Post deleted successfully.');
