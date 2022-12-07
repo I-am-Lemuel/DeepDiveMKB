@@ -8,7 +8,6 @@ html {
 body {
     background-color: #091833;
     border: solid 2px #0abdc6;
-    border-right: solid 0px;
     margin: 0;
 }
 
@@ -27,5 +26,5 @@ div::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb,
 div::-webkit-scrollbar-thumb {
     background-color: #091833;
-    border: 2px solid #EA00D9;
+    border: 2px solid #ea00d9;
 }

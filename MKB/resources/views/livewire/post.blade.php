@@ -1,26 +1,22 @@
-<div>
+<div class="">
     <div class="">
-        <div class="">
-            <div class="">
-                @if (session()->has('success'))
-                    <div class="" role="alert">
-                        {{ session()->get('success') }}
-                    </div>
-                @endif
-
-                @if (session()->has('error'))
-                    <div class="" role="alert">
-                        {{ session()->get('error') }}
-                    </div>
-                @endif
-
-                @if ($updatePost)
-                    @include('livewire.update')
-                @else
-                    @include('livewire.create')
-                @endif
+        @if (session()->has('success'))
+            <div class="" role="alert">
+                {{ session()->get('success') }}
             </div>
-        </div>
+        @endif
+
+        @if (session()->has('error'))
+            <div class="" role="alert">
+                {{ session()->get('error') }}
+            </div>
+        @endif
+
+        @if ($updatePost)
+            @include('livewire.update')
+        @else
+            @include('livewire.create')
+        @endif
     </div>
 
     <div class="p-12">
