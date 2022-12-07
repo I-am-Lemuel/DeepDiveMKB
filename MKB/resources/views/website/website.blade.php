@@ -8,10 +8,8 @@
     <title>IT-Price | Home</title>
 </head>
 <body>
-
 <h1>website.blade.php</h1>
-<x-header/>
-<x-chards/>
-
+<x-header />
+<x-chards />
 </body>
 </html>
