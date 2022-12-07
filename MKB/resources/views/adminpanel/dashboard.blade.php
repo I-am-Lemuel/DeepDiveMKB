@@ -13,10 +13,11 @@
 <body>
     <nav class="">
     </nav>
-    <div class="container mx-auto]">
+    <div class="container mx-auto">
         @livewire('post')
     </div>
     <footer class="">
+
     </footer>
 
     @livewireScripts
