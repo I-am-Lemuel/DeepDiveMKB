@@ -19,7 +19,6 @@
 </head>
 
 <body>
-    <x-header />
     <x-chards />
 </body>
 
