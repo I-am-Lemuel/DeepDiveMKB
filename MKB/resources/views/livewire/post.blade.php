@@ -18,7 +18,7 @@
             @include('livewire.create')
         @endif
     </div>
-
+    
     <div class="p-12">
         <div class="p-6">
             <div class="bg-[#232323]">
@@ -43,7 +43,7 @@
                                         {{ $rs->file_path }}
                                     </x-table-column>
                                     <x-table-column>
-                                        {{ $rs->price }}
+                                        €{{ $rs->price }}
                                     </x-table-column>
                                     <x-table-column>
                                         {{ $rs->description }}
