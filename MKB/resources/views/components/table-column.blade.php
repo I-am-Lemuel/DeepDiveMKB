@@ -1,1 +1,2 @@
-<td class="border border-transparent px-6 py-4">{{ $slot }}</td>
+<td class="p-3 text-sm text-white max-w-[160px] break-words">{{ $slot }}</td>
+
