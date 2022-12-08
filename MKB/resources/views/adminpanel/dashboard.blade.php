@@ -11,16 +11,16 @@
 </head>
 
 <body>
-    <div class="h-screen w-full m-[-2px] ">
-        <div class="container mx-auto">
-            @livewire('post')
-        </div>
-        <footer class="">
-
-        </footer>
-
-        @livewireScripts
+    <nav class="">
+    </nav>
+    <div class="container mx-auto">
+        @livewire('post')
     </div>
+    <footer class="">
+
+    </footer>
+
+    @livewireScripts
 </body>
 
 </html>
