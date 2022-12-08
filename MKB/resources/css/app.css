@@ -8,6 +8,7 @@ html {
 body {
     background-color: #091833;
     color: #fff;
+    margin: 0;
 }
 
 body::-webkit-scrollbar-track,
