@@ -1,4 +1,5 @@
-<div class="bg-linear-pink-invert py-3 px-1">
+ 
+<div id="snap" class="bg-linear-pink-invert py-3 px-1">
     <div tabindex="0" aria-label="footer" class="focus:outline-none mx-auto container flex flex-col items-center justify-center">
         <div class="text-black flex flex-col md:items-center f-f-l pt-3">
             <div class="my-6 text-base text-color f-f-l"> 

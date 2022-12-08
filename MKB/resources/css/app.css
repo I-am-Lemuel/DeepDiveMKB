@@ -7,7 +7,6 @@ html {
 }
 body {
     background-color: #091833;
-    border: solid 2px #0abdc6;
     margin: 0;
 }
 
@@ -27,4 +26,13 @@ body::-webkit-scrollbar-thumb,
 div::-webkit-scrollbar-thumb {
     background-color: #091833;
     border: 2px solid #ea00d9;
+}
+
+.main-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+.main-container > #snap {
+    scroll-snap-align: start;
 }
