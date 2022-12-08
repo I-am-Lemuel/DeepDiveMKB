@@ -4,22 +4,19 @@
 <head>
     <meta charset="UTF-8">
     @vite('resources/css/app.css')
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        body {
-            width: calc(100vw - (100vw - 100%));
-        }
-
-        .x-h-max {
-            height: 100vh;
-        }
-    </style>
+    <link src="resources/css/card.css" rel="stylesheet">
     <title>IT-Price | Home</title>
 </head>
 
 <body>
-    <x-chards />
+    <div class="main-container">
+        <x-header />
+        <x-chards />
+        <x-footer />
+    </div>
 </body>
 
 </html>

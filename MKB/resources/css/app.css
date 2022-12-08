@@ -2,10 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     background-color: #091833;
     color: #fff;
-    border: solid 2px #0abdc6;
-    height: 100vh;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #091833;
+    color: #fff;
+    margin: 0;
+}
+
+body::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #091833;
+}
+
+body::-webkit-scrollbar,
+div::-webkit-scrollbar {
+    width: 10px;
+    background-color: #091833;
+}
+
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+    background-color: #091833;
+    border: 2px solid #ea00d9;
+}
+
+.main-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+.main-container > #snap {
+    scroll-snap-align: start;
 }
