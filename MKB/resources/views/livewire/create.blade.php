@@ -1,4 +1,4 @@
-    <form class="mx-auto">
+    <form class="mx-auto text-white">
         <h1 class="text-center text-3xl w-full py-10">Create a new event</h1>
         </hr>
         <div class="flex flex-row justify-center space-x-6 pb-6 pt-5">
