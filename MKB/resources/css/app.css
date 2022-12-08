@@ -7,7 +7,10 @@ html {
 }
 body {
     background-color: #091833;
-    margin: 0;
+    color: #fff;
+    border: solid 2px #0abdc6;
+    height: 100vh;
+    max-width: 100vw;
 }
 
 body::-webkit-scrollbar-track,
