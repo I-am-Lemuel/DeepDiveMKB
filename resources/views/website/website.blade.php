@@ -14,7 +14,18 @@
 <body>
     <div class="main-container">
         <x-header />
-        <x-chards />
+        <x-chards>
+            @foreach ($posts as $rs)
+                <x-card>
+                    <x-slot name="title">
+                        {{ $rs->title }}
+                    </x-slot>
+                    <x-slot name="description">
+                        {{ $rs->description }}
+                    </x-slot>
+                </x-card>
+            @endforeach
+        </x-chards>
         <x-mail-form />
     </div>
     <x-footer />
