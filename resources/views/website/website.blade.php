@@ -15,8 +15,9 @@
     <div class="main-container">
         <x-header />
         <x-chards />
-        <x-footer />
+        <x-mail-form />
     </div>
+    <x-footer />
 </body>
 
 </html>
