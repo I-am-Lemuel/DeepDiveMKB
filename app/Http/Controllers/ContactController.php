@@ -18,6 +18,6 @@ class ContactController extends Controller
             'message' => $request->message
         ];
         Mail::to('receiver@gmail.com')->send(new ContactMail($data));
-        return 'Thanks for contacting us!';
+        return view('components.thank-you');
     }
 }
