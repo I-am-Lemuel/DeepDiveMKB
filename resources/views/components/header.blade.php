@@ -6,6 +6,6 @@
             <span class="text-[#EA00D9]">IT-Prize</span>
         </h1>
         <p class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg">Een omgeving
-        om jou oplossingen te vinden. </p>
+        waar studenten werken aan jouw problemen. </p>
     </div>
 </div>
