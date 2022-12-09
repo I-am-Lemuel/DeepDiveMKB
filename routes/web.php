@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('website.website');
+    $posts = \App\Models\Post::all();
+    return view('website.website', compact('posts'));
 });
 
 
