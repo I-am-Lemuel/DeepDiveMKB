@@ -10,10 +10,10 @@
                      </li>
                      <li class="md:mr-6 cursor-pointer text-2xl pt-4 lg:py-0"><a
                              href="https://github.com/I-am-Lemuel/DeepDiveMKB"
-                             class="focus:outline-none dark:text-white  focus:underline hover:text-gray-500">github</a>
+                             class="focus:outline-none dark:text-white  focus:underline hover:text-gray-500">Github</a>
                      </li>
                      <li class="md:mr-6 cursor-pointer text-2xl pt-4 lg:py-0"><a href="dashboard"
-                             class="focus:outline-none dark:text-white  focus:underline hover:text-gray-500">dashboard</a>
+                             class="focus:outline-none dark:text-white  focus:underline hover:text-gray-500">Dashboard</a>
                      </li>
                  </ul>
              </div>

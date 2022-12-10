@@ -1,8 +1,8 @@
 <div id="snap" class="h-screen bg-[#020d20] flex justify-center items-center flex-col"">
     <h2 class="p-5">
-        <span class="text-[#ffffff] text-4xl font-bold">Contact Us</span>
+        <span class="text-[#ffffff] text-4xl font-bold">Contacteer ons!</span>
     </h2>
-    <span>If you want your bounty on our page contact us now</span>
+    <span>Als u een bounty heeft.</span>
     <div class="mt-4 bg-[#091833] p-3 shadow-2xl border-b-2 border-[#EA00D9]">
         <form action="{{ route('send.email') }}" method="POST" autocomplete="off">
             @csrf
